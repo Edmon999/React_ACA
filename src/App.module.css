@@ -1,0 +1,15 @@
+.card{
+    width: 30vw;
+    height: 30vh;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgba(41, 181, 190, 0.733);
+    margin: 10px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
