@@ -7,7 +7,6 @@ class Counter extends Component {
     this.state = {
       value: 0,
       info: {},
-      isNumberSmallThanZero: "true"
     };
   }
 
@@ -38,11 +37,7 @@ class Counter extends Component {
           }));
         }
     }
-    if(value < 0){
-      this.setState({
-        isNumberSmallThanZero: !isNumberSmallThanZero
-      })
-    }
+  
   };
   getInfoFromInputs = (info) => {
     this.setState({
@@ -50,7 +45,7 @@ class Counter extends Component {
     });
   };
   render() {
-    const { value,isNumberSmallThanZero } = this.state;
+    const { value} = this.state;
     return (
       <div className={styles.main}>
         {value}
